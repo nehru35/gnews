@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$blue : #4a4af3;
+$white : #ffffff;
+$black : #242323;
+
+.main-container {
+    margin-top: 80px;
+}
+
+// SECTION TITLE
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+// FIM SECTION TITLE
+
+// DESTAQUE
+div.destaque {
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: $black;
+    
+    a {
+        display: block;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .image-link {
+        img {
+            display: block;
+            width: inherit;
+            height: inherit;
+        }
+    }
+
+    .title-link {
+        h2 {
+            width: 80%;
+            margin: 10px auto;
+            height: 100%;
+            font-size: 1.5rem;
+        
+            &:hover,
+            &:active {
+                color: $blue;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    div.destaque {
+        width: 90%;
+        max-width: 1000px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        
+    
+        .image-link {
+            
+            img {
+                display: block;
+                width: inherit;
+                height: inherit;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    
+        .title-link {
+            justify-self: center;
+            align-self: center;
+
+            h2 {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 2rem;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+// FIM DESTAQUE
+
+
+// NEWS CONTAINER
+.news-container {
+    width: 95%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: $black;
+
+    .news-section {
+        width: 100%;
+        height: 150px;
+        margin: 3px auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 5px;
+        overflow: hidden;
+        border-top: 1px  solid #000;
+        border-bottom: 1px  solid #000;
+
+        .image-link {
+            display: block;
+            width: 40%;
+            max-width: 150px;
+            height: 95%;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .content {
+            width: 80%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                display: block;
+                background-color: rgba(0,0,0,0.5);
+                font-size: 1.2rem;
+                padding: 5px;                        
+            }
+
+            a {
+                display: block;
+                margin-top: 30px;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .news-container {
+        max-width: 1000px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 10px;
+    
+        .news-section {
+            width: 95%;
+            height: 150px;
+            margin: 3px auto;
+            padding: 5px;
+            column-gap: 10px;
+            border: 1px  solid #000;
+            transition: all 0.5s ease-in-out;
+
+            .image-link {
+                display: block;
+                width: 40%;
+                max-width: 150px;
+                height: 95%;
+    
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .content {
+                width: 65%;
+    
+                span {
+                    font-size: 1.3rem; 
+                    font-weight: bold;                     
+                }
+    
+                a {
+                    font-size: 1.3rem;
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                border: none;
+            }
+        }
+    }
+}
+
+// FIM NEWS CONTAINER

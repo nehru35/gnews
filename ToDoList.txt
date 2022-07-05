@@ -1,0 +1,15 @@
+Adicionar notícias na secção política
+Criar um dropdown menu
+Criar uma função que vai gerar um novo bloco de nóticias a cada vinte notícias
+CAdicionar icons do font awesome e mudar as cores com base nos hover etc
+Adicionar um traço after e before the section title
+Ver como gerar image webpack ou sgv
+Como fazer mini images para as mine news section
+Criar um logo
+Criar um menu de pesquisa
+Estudar melhor o rotate efect no menu button mobile
+Cores (Header, Footer e menu mobile show)
+Adicionar hover nos links
+Colocar active uma barra por baixo
+------ continua depois da publicidade -------
+----- title section -------
